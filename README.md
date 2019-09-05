@@ -2,7 +2,7 @@
 
 The capstone will build upon the knowledge you have gained in the course in order to build a decentralized housing product. 
 
-House Listing DApp is a Decentralized Application built on Ethereum platform, to demonstrate the use of blockchain in house listing services. Each house is listed in [OpenSea rinkeby testnet](rinkeby.opensea.io) as a token comply to ERC721. 
+House Listing DApp is a Decentralized Application built on Ethereum platform, to demonstrate the use of blockchain in house listing services. Each house is listed in [OpenSea rinkeby testnet](https://rinkeby.opensea.io) as a token comply to ERC721. 
 
 # Contract Information
 The contract was deployed to rinkeby testnet
