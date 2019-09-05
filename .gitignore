@@ -1,5 +1,5 @@
-mnemonic
-infurakey
+eth-contracts/mnemonic
+eth-contracts/infurakey
 node_modules
 eth-contracts/build
 dockercommand

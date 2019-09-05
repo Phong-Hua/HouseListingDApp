@@ -8,5 +8,5 @@ module.exports = function(deployer, accounts) {
   deployer.deploy(SquareVerifier).then(() => {
     return deployer.deploy(SolnSquareVerifier, "Housing Token", "HST", SquareVerifier.address);
   });
-  deployer.deploy(Erc721Mintable, "Housing Token", "HST");
+  // deployer.deploy(Erc721Mintable, "Housing Token", "HST");
 };

@@ -1,6 +1,19 @@
-# Udacity Blockchain Capstone
+# House Listing DApp
 
 The capstone will build upon the knowledge you have gained in the course in order to build a decentralized housing product. 
+
+House Listing DApp is a Decentralized Application built on Ethereum platform, to demonstrate the use of blockchain in house listing services. Each house is listed in [OpenSea rinkeby testnet](rinkeby.opensea.io) as a token comply to ERC721. 
+
+# Contract Information
+The contract was deployed to rinkeby testnet
+
+- Transaction Hash: [0x80cbabc7b3294360183137575a4e202ad974bf74a38551c7c0a62a0d14812d34](https://rinkeby.etherscan.io/tx/0x80cbabc7b3294360183137575a4e202ad974bf74a38551c7c0a62a0d14812d34)
+- Contract Address: [0x7b985cf3c635b8e0d2569845fce7e599a82b545b](https://rinkeby.etherscan.io/address/0x7b985cf3c635b8e0d2569845fce7e599a82b545b)
+
+## ABI
+![ABI](/eth-contracts/ABI)
+
+# Execution
 
 # Project Resources
 
