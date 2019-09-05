@@ -7,11 +7,9 @@ House Listing DApp is a Decentralized Application built on Ethereum platform, to
 # Contract Information
 The contract was deployed to rinkeby testnet
 
-- Transaction Hash: [0x80cbabc7b3294360183137575a4e202ad974bf74a38551c7c0a62a0d14812d34](https://rinkeby.etherscan.io/tx/0x80cbabc7b3294360183137575a4e202ad974bf74a38551c7c0a62a0d14812d34)
+- ABI: [ABI](/eth-contracts/ABI)
 - Contract Address: [0x7b985cf3c635b8e0d2569845fce7e599a82b545b](https://rinkeby.etherscan.io/address/0x7b985cf3c635b8e0d2569845fce7e599a82b545b)
-
-## ABI
-![ABI](/eth-contracts/ABI)
+- Transaction Hash: [0x80cbabc7b3294360183137575a4e202ad974bf74a38551c7c0a62a0d14812d34](https://rinkeby.etherscan.io/tx/0x80cbabc7b3294360183137575a4e202ad974bf74a38551c7c0a62a0d14812d34)
 
 # Execution
 
