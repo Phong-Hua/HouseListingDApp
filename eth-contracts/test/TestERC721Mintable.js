@@ -83,6 +83,7 @@ contract('TestERC721Mintable', accounts => {
 
         it('should fail when minting when address is not contract owner', async function () { 
             
+            // We expects the exception is thrown here as we not using contract owner address to mint the token
             try {
                 await this.contract.mint(account_two, id1, tokenURI, {from : account_two});
             } catch (error) {

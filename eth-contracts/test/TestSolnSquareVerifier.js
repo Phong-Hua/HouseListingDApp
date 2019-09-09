@@ -47,7 +47,7 @@ contract('TestSolnSquareVerifier', accounts => {
 
         tokenId = 2;
 
-        // Error should happen here as we re-used the solution
+        // We expects the exception is thrown here as we re-used the solution
         try {
             await contract.mintNewToken(a, b, c, input, address, tokenId, uri)
         } catch (error) {
