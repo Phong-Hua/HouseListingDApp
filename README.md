@@ -28,6 +28,19 @@ _ Token 5: [Floating House](https://rinkeby.opensea.io/assets/0x0997023ffb949d0d
 
 # Execution
 
+- After download the project, at command prompt, download necessary npm modules:
+  `` npm install ``
+- Go to eth-contracts:
+  `` cd eth-contracts ``
+- Go to the truffle mode:
+  `` truffle develop ``
+- Compile the contracts:
+  `` compile ``
+- Migrate to the test network:
+  `` migrate --reset ``
+- Run the test files:
+  `` test ``
+
 # Project Resources
 
 * [Remix - Solidity IDE](https://remix.ethereum.org/)
