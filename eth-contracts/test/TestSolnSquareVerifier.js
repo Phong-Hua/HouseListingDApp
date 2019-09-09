@@ -46,8 +46,13 @@ contract('TestSolnSquareVerifier', accounts => {
         truffleAssert.eventEmitted(tx, 'TokenMinted');
 
         tokenId = 2;
+
         // Error should happen here as we re-used the solution
-        tx = await contract.mintNewToken(a, b, c, input, address, tokenId, uri);
+        try {
+            await contract.mintNewToken(a, b, c, input, address, tokenId, uri)
+        } catch (error) {
+            assert(error.message.search('Require new Solution') >= 0, "Require new Solution")
+        }
     })
 
 })

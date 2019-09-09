@@ -83,7 +83,13 @@ contract('TestERC721Mintable', accounts => {
 
         it('should fail when minting when address is not contract owner', async function () { 
             
-            await this.contract.mint(account_two, id1, tokenURI, {from : account_two});
+            try {
+                await this.contract.mint(account_two, id1, tokenURI, {from : account_two});
+            } catch (error) {
+                assert(error.message.search('Only contract owner is allowed') >= 0, "'Only contract owner is allowed to mint the token")
+            }
+
+            
         })
 
         it('should return contract owner', async function () { 
