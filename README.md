@@ -8,8 +8,23 @@ House Listing DApp is a Decentralized Application built on Ethereum platform, to
 The contract was deployed to rinkeby testnet
 
 - ABI: [ABI](/eth-contracts/ABI)
-- Contract Address: [0x7b985cf3c635b8e0d2569845fce7e599a82b545b](https://rinkeby.etherscan.io/address/0x7b985cf3c635b8e0d2569845fce7e599a82b545b)
-- Transaction Hash: [0x80cbabc7b3294360183137575a4e202ad974bf74a38551c7c0a62a0d14812d34](https://rinkeby.etherscan.io/tx/0x80cbabc7b3294360183137575a4e202ad974bf74a38551c7c0a62a0d14812d34)
+- Contract Address: [0x0997023fFB949d0d57681c609f34fBBbcE031A83](https://rinkeby.etherscan.io/address/0x0997023fFB949d0d57681c609f34fBBbcE031A83)
+- Transaction Hash: [0xaff20302103bfe7a5d6ae3fc6591edcaab4ccd994c53a236eb6c6c62c0a8e968](https://rinkeby.etherscan.io/tx/0xaff20302103bfe7a5d6ae3fc6591edcaab4ccd994c53a236eb6c6c62c0a8e968)
+
+# Token Information
+
+Tokens are listed in OpenSea.
+
+_ Token 1: [Cozy family home](https://rinkeby.opensea.io/assets/0x0997023ffb949d0d57681c609f34fbbbce031a83/1)
+
+_ Token 2: [Luxury Home](https://rinkeby.opensea.io/assets/0x0997023ffb949d0d57681c609f34fbbbce031a83/2)
+
+_ Token 3: [Manufacturing Warehouse](https://rinkeby.opensea.io/assets/0x0997023ffb949d0d57681c609f34fbbbce031a83/3)
+
+_ Token 4: [Small Condo](https://rinkeby.opensea.io/assets/0x0997023ffb949d0d57681c609f34fbbbce031a83/4)
+
+_ Token 5: [Floating House](https://rinkeby.opensea.io/assets/0x0997023ffb949d0d57681c609f34fbbbce031a83/5)
+
 
 # Execution
 

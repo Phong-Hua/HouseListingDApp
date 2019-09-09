@@ -540,6 +540,15 @@ library Pairing {
 }
 
 contract Verifier {
+
+    address private owner;
+
+    constructor()
+    public
+    {
+        owner = msg.sender;
+    }
+
     using Pairing for *;
     struct VerifyingKey {
         Pairing.G1Point a;
@@ -602,5 +611,12 @@ contract Verifier {
         } else {
             return false;
         }
+    }
+
+    function kill()
+    public
+    {
+        require(owner == msg.sender, "Require owner to destroy contract");
+        selfdestruct(msg.sender);
     }
 }

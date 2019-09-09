@@ -35,5 +35,20 @@ contract('TestSolnSquareVerifier', accounts => {
         truffleAssert.eventEmitted(tx, 'TokenMinted');
 
     })
+
+    it('Test if a solution can only be used once', async function(){
+
+        let address = accounts[0];
+        let tokenId = 1;
+        let uri = 'https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/';
+
+        let tx = await contract.mintNewToken(a, b, c, input, address, tokenId, uri);
+        truffleAssert.eventEmitted(tx, 'TokenMinted');
+
+        tokenId = 2;
+        // Error should happen here as we re-used the solution
+        tx = await contract.mintNewToken(a, b, c, input, address, tokenId, uri);
+    })
+
 })
 

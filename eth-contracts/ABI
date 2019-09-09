@@ -1,4 +1,4 @@
-  "abi": [
+[
     {
       "constant": true,
       "inputs": [
@@ -626,6 +626,15 @@
         }
       ],
       "name": "mintNewToken",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "kill",
       "outputs": [],
       "payable": false,
       "stateMutability": "nonpayable",

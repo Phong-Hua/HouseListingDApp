@@ -5,6 +5,7 @@ import './ERC721Mintable.sol';
 contract Verifier {
     
     function verifyTx(uint[2] memory a, uint[2][2] memory b, uint[2] memory c, uint[2] memory input) public returns (bool);
+
 }
 
 // TODO define another contract named SolnSquareVerifier that inherits from your ERC721Mintable class
@@ -58,22 +59,28 @@ contract SolnSquareVerifier is ERC721MintableComplete {
     {
         uint256 key = _getSolutionKey(a, b, c, input);
         require(submittedSolution[key].solutionOwner == address(0), "Require new Solution");
+        _addSolution(key);
+        emit SolutionAdded();
+    }
+
+    /**
+    * Add solution to the solutions array and submittedSolution.
+    */
+    function _addSolution(uint256 key)
+    internal
+    {
         Solution memory sol;
         sol.index = solutions.length;
         sol.solutionOwner = msg.sender;
         submittedSolution[key] = sol;
         solutions.push(sol);
-        emit SolutionAdded();
     }
-
 
     modifier requireVerifiedSolution(uint[2] memory a, uint[2][2] memory b, uint[2] memory c, uint[2] memory input)
     {
         require(verifier.verifyTx(a, b, c, input) == true, "Require the solution is valid");
         _;
     }
-
-
 
     // TODO Create a function to mint new NFT only after the solution has been verified
     //  - make sure the solution is unique (has not been used before)
@@ -85,7 +92,17 @@ contract SolnSquareVerifier is ERC721MintableComplete {
         uint256 key = _getSolutionKey(a, b, c, input);
         require(submittedSolution[key].solutionOwner == address(0), "Require new Solution");
         if (super.mint(to, tokenId, tokenURI))
+        {
             emit TokenMinted();
+            _addSolution(key);
+        }
+    }
+
+    function kill()
+    public
+    onlyOwner
+    {
+        selfdestruct(msg.sender);
     }
 }
 
